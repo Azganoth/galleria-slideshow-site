@@ -8,6 +8,7 @@ This is a solution to the [Galleria slideshow site challenge on Frontend Mentor]
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -24,14 +25,13 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Navigate the slideshow and view each painting in a lightbox
 
-<!-- ### Screenshot
+### Screenshot
 
-![](./screenshot.jpg) -->
+![](./screenshot.png)
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-
+- Solution URL: [Mobile-first solution using React and NextJS](https://www.frontendmentor.io/solutions/mobilefirst-solution-using-react-and-nextjs-je9ptlPq58)
 - Live Site URL: [Galleria](https://azganoth.github.io/galleria-slideshow-site/)
 
 ## My process

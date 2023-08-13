@@ -1,0 +1,20 @@
+.masonry {
+  position: relative;
+  width: 100%;
+}
+
+.item {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: max-content;
+  transform: translateX(-50%);
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.5s ease-out;
+}
+
+.item:not(.show) {
+  opacity: 0;
+}

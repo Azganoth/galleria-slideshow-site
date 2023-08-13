@@ -10,9 +10,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@svgr/webpack": "8.0.1",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
+    "client-only": "0.0.1",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.10",
     "eslint-config-prettier": "9.0.0",
@@ -20,6 +22,7 @@
     "prettier": "^3.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "server-only": "0.0.1",
     "typescript": "5.1.6"
   }
 }

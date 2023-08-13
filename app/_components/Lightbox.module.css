@@ -1,0 +1,88 @@
+.trigger {
+  display: flex;
+  appearance: none;
+  border: none;
+  padding: 14px 16px;
+  background: hsla(0deg, 0%, 0%, 0.7546);
+}
+
+.trigger:hover {
+  background: hsla(0deg, 0%, 100%, 0.2522);
+}
+
+.trigger > svg {
+  width: 12px;
+  height: 12px;
+}
+
+.trigger > span {
+  margin-left: 14px;
+  color: var(--color-white);
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.143px;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 79px 24px; /* vertical: 24px + close height + close position */
+  background: hsla(0deg, 0%, 0%, 0.85);
+  transition:
+    opacity 0.25s ease-out,
+    visibility 0.25s ease-out;
+}
+
+.lightbox:not(.show) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.painting {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -38px;
+  right: 0;
+  appearance: none;
+  border: none;
+  background: none;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.close:hover {
+  opacity: 25%;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    padding: 107px 49px; /* vertical: 49px + close height + close position */
+  }
+
+  .close {
+    top: -41px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .modal {
+    padding: 150px 92px; /* vertical: 92px + close height + close position */
+  }
+}

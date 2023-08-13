@@ -1,0 +1,234 @@
+.content {
+  padding: 24px;
+  margin-bottom: 73px; /* footer height */
+}
+
+.painting {
+  position: relative;
+}
+
+.viewButton {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.hero {
+  height: 280px;
+  object-fit: cover;
+}
+
+.legend {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 47px;
+  padding: 24px;
+  transform: translateY(54px);
+  background: var(--color-white);
+}
+
+.legendPainting {
+  margin-bottom: 8px;
+  color: var(--color-black);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.legendArtist {
+  font-size: 15px;
+}
+
+.legendImage {
+  position: absolute;
+  top: 100%;
+  left: 16px;
+  width: 64px;
+  height: 64px;
+}
+
+.info {
+  margin-top: 98px;
+}
+
+.year {
+  margin-bottom: -26px;
+  color: var(--color-light-gray);
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: right;
+}
+
+.description {
+  margin-bottom: 40px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.source {
+  font-size: 9px;
+  letter-spacing: 1.93px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--color-white);
+}
+
+.controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 17px 24px 16px;
+}
+
+.progress,
+.progress::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.progress {
+  background: var(--color-gray);
+}
+
+.progress::after {
+  content: '';
+  background: var(--color-black);
+  transform: scaleX(var(--progress));
+  transform-origin: left;
+}
+
+.controlPainting {
+  margin-bottom: 9px;
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.controlArtist {
+  opacity: 75%;
+  color: var(--color-black);
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: 40px;
+    margin-bottom: 97px; /* footer height */
+  }
+
+  .viewButton {
+    top: unset;
+    bottom: 16px;
+  }
+
+  .hero {
+    width: 475px;
+    height: 560px;
+  }
+
+  .legend {
+    left: unset;
+    top: 0;
+    bottom: unset;
+    right: 0;
+    padding: 0 0 67px 65px;
+    width: 445px;
+    transform: none;
+  }
+
+  .legendPainting {
+    margin-bottom: 24px;
+    font-size: 56px;
+    line-height: 1.14;
+  }
+
+  .legendImage {
+    top: 100%;
+    left: unset;
+    right: 55px;
+    width: 128px;
+    height: 128px;
+  }
+
+  .info {
+    margin-top: 64px;
+  }
+
+  .year {
+    margin-bottom: -75px;
+    font-size: 200px;
+    line-height: 0.75;
+    text-align: left;
+  }
+
+  .description {
+    margin-bottom: 68px;
+  }
+
+  .context {
+    margin: 0 116px 68px;
+  }
+
+  .controls {
+    padding: 25px 41px;
+  }
+
+  .controlPainting {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .controlArtist {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 100px 40px 75px;
+  }
+
+  .hero {
+    margin-right: 380px;
+    width: 475px;
+    height: 560px;
+  }
+
+  .legendImage {
+    top: 496px;
+    left: 95px;
+    right: unset;
+  }
+
+  .info {
+    margin-top: 0;
+  }
+
+  .year {
+    margin-bottom: -35px;
+    text-align: right;
+  }
+
+  .description {
+    margin-bottom: 165px;
+  }
+
+  .context {
+    margin: 0 125px 53px 1px;
+  }
+}

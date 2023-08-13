@@ -1,0 +1,32 @@
+span.control {
+  opacity: 15%;
+}
+
+a.control:hover {
+  opacity: 50%;
+}
+
+.previous {
+  margin-left: auto;
+}
+
+.next {
+  margin-left: 23px;
+}
+
+.icon {
+  display: block;
+  width: 17px;
+  height: 16px;
+}
+
+@media (min-width: 768px) {
+  .next {
+    margin-left: 41px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 24px;
+  }
+}

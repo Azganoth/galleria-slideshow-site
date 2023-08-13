@@ -11,6 +11,7 @@ import {
 } from 'react';
 import styles from './Masonry.module.css';
 import { useMediaQuery } from '@/_hooks/useMediaQuery';
+import swapInPlace from '@/_utils/swapInPlace';
 
 function MasonryItem({
   children,
@@ -58,10 +59,31 @@ function MasonryItem({
 const MemoizedMasonryItem = memo(MasonryItem);
 
 export default function Masonry({ children }: { children: React.ReactNode }) {
-  const items = useMemo(() => Children.toArray(children), [children]);
+  const _items = useMemo(() => Children.toArray(children), [children]);
 
   const isTablet = useMediaQuery('(min-width: 768px)');
   const isDesktop = useMediaQuery('(min-width: 1440px)');
+
+  // hard code partitioning
+  const items = useMemo(() => {
+    const sortedItems = [..._items];
+    if (isDesktop) {
+      swapInPlace(sortedItems, 5, 7);
+      swapInPlace(sortedItems, 8, 10);
+      swapInPlace(sortedItems, 9, 10);
+      swapInPlace(sortedItems, 11, 13);
+      swapInPlace(sortedItems, 12, 13);
+      swapInPlace(sortedItems, 12, 14);
+      return sortedItems;
+    }
+
+    if (isTablet) {
+      swapInPlace(sortedItems, 8, 9);
+      return sortedItems;
+    }
+
+    return sortedItems;
+  }, [_items, isTablet, isDesktop]);
 
   const [columns, gap] = useMemo(() => {
     if (isDesktop) {

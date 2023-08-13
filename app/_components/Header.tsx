@@ -8,12 +8,9 @@ export default function Header({ action }: { action: 'start' | 'stop' }) {
   return (
     <header className={styles.header}>
       <Logo className={styles.logo} />
-      <Link
-        className={styles.slidershow}
-        href={canStop ? '/' : '/starry-night'}
-      >
+      <a className={styles.slidershow} href={canStop ? '/' : '/starry-night'}>
         {canStop ? 'Stop' : 'Start'} slideshow
-      </Link>
+      </a>
     </header>
   );
 }

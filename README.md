@@ -10,6 +10,7 @@ This is a solution to the [Galleria slideshow site challenge on Frontend Mentor]
     - [The challenge](#the-challenge)
   - [My process](#my-process)
     - [Built with](#built-with)
+    - [Useful resources](#useful-resources)
   - [Author](#author)
 
 ## Overview
@@ -41,10 +42,9 @@ Users should be able to:
 - [React](https://reactjs.org/) - JavaScript library
 - [Next.js](https://nextjs.org/) - React framework
 
-<!-- ### Useful resources
+### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept. -->
+- [Next.js Github Pages](https://github.com/gregrickaby/nextjs-github-pages) - This helped me setup github pages for NextJS framework.
 
 ## Author
 

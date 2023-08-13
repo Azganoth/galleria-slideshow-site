@@ -10,6 +10,7 @@ export default function Page() {
     <>
       <Header action="start" />
       <main className={styles.content}>
+        <h1 className={styles.srHeading}>Galleria</h1>
         <Masonry>
           {paintings.map((painting) => (
             <Link

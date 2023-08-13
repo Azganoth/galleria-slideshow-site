@@ -8,6 +8,7 @@ This is a solution to the [Galleria slideshow site challenge on Frontend Mentor]
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
+    - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
     - [Useful resources](#useful-resources)
@@ -25,12 +26,13 @@ Users should be able to:
 
 <!-- ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.jpg) -->
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
+
+- Live Site URL: [Galleria](https://azganoth.github.io/galleria-slideshow-site/)
 
 ## My process
 
